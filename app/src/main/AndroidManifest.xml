@@ -13,14 +13,29 @@
         android:theme="@style/Theme.TAParking"
         tools:targetApi="31">
         <activity
+            android:name=".HistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BookingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LocationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TopUpActivity"
+            android:exported="false" /> <!-- Aktivitas yang sudah ada -->
+        <activity
             android:name=".layout_parkiran"
             android:exported="false" />
         <activity
-            android:name=".dashboard"
+            android:name=".DashboardActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
