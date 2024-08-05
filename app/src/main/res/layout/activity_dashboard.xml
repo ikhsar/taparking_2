@@ -55,9 +55,9 @@
             android:id="@+id/d_g1"/>
 
             <RelativeLayout
-                android:layout_width="350dp"
-                android:layout_height="60dp"
-                android:background="@drawable/custom3"
+                android:layout_width="344dp"
+                android:layout_height="73dp"
+                android:background="@drawable/custom5"
                 android:layout_marginTop="150dp"
                 android:layout_marginLeft="30dp">
 
@@ -91,7 +91,7 @@
                 <ImageView
                     android:layout_width="25dp"
                     android:layout_height="25dp"
-                    android:src="@drawable/topup"
+                    android:src="@drawable/pay"
                     android:layout_toRightOf="@id/d_txt2"
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="70dp"/>
@@ -135,24 +135,31 @@
 
             </RelativeLayout>
 
+    
     <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="303dp"
+        android:layout_height="139dp"
+        android:src="@drawable/custom5"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="50dp"/>
+    <ImageView
+        android:layout_width="37dp"
+        android:layout_height="43dp"
         android:src="@drawable/location"
         android:layout_marginLeft="80dp"
         android:layout_marginTop="270dp"
         android:id="@+id/d_location"/>
     <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="37dp"
+        android:layout_height="43dp"
         android:layout_toRightOf="@id/d_location"
         android:src="@drawable/booking"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="270dp"
         android:id="@+id/d_booking"/>
     <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="37dp"
+        android:layout_height="43dp"
         android:layout_toRightOf="@id/d_booking"
         android:src="@drawable/history"
         android:layout_marginLeft="40dp"
@@ -164,7 +171,7 @@
         android:layout_height="60dp"
         android:text="Location"
         android:layout_below="@id/d_location"
-        android:layout_marginLeft="83dp"
+        android:layout_marginLeft="75dp"
         android:layout_marginTop="10dp"
         android:textStyle="bold"
         android:textSize="12sp"
@@ -174,7 +181,7 @@
         android:layout_height="60dp"
         android:text="Booking"
         android:layout_below="@id/d_booking"
-        android:layout_marginLeft="173dp"
+        android:layout_marginLeft="155dp"
         android:layout_marginTop="10dp"
         android:textStyle="bold"
         android:textSize="12sp"
@@ -184,7 +191,7 @@
         android:layout_height="60dp"
         android:text="History"
         android:layout_below="@id/d_history"
-        android:layout_marginLeft="266dp"
+        android:layout_marginLeft="235dp"
         android:layout_marginTop="10dp"
         android:textStyle="bold"
         android:textSize="12sp"

@@ -6,5 +6,7 @@
     <color name="rl">#00FDDE</color>
     <color name="button">#131212</color>
     <color name="muda">#EC5A5A</color>
-
+    <color name="bw">#F8F7FB</color>
+    <color name="mw">#D70404</color>
+    <color name="abu">#7F909F</color>
 </resources>

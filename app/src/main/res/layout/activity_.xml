@@ -31,22 +31,22 @@
     <ImageView
         android:layout_width="170dp"
         android:layout_height="162dp"
-        android:src="@drawable/kertas"
+        android:src="@drawable/kalender"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="250dp"
-        android:id="@+id/ac_kertas"/>
+        android:id="@+id/ac_kalender"/>
     <TextView
         android:layout_width="384dp"
         android:layout_height="94dp"
         android:text="You Have No
-Previous Transaction"
+Previous Activity"
         android:textSize="30dp"
         android:textAlignment="center"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/ac_kertas"
+        android:layout_below="@id/ac_kalender"
         android:layout_marginTop="20dp"
         android:textStyle="bold"
         android:textColor="@color/abu"
         android:id="@+id/ac_ynn"/>
-
+        
 </RelativeLayout>

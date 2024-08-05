@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".wallet"
+    android:background="@color/white">
+    
+    <ImageView
+        android:layout_width="391dp"
+        android:layout_height="100dp"
+        android:src="@drawable/custom5"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Default Payment Method"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/abu"
+        android:textStyle="bold"
+        android:textSize="10sp"
+        android:id="@+id/w_default"/>
+    
+    <ImageView
+        android:layout_width="58dp"
+        android:layout_height="49dp"
+        android:src="@drawable/gopay"
+        android:layout_below="@+id/w_default"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/w_gopay"/>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="E-Wallet"
+        android:layout_below="@+id/w_gopay"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="10sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:id="@+id/w_ewallet"/>
+    
+    <ImageView
+        android:layout_width="82dp"
+        android:layout_height="23dp"
+        android:src="@drawable/dana"
+        android:layout_below="@id/w_ewallet"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/w_dana"/>
+        
+
+    <ImageView
+        android:layout_width="410dp"
+        android:layout_height="0dp"
+        android:src="@drawable/garis"
+        android:layout_below="@+id/w_ewallet"
+        android:layout_marginTop="100dp"
+        android:id="@+id/w_garis"/>
+    
+    <ImageView
+        android:layout_width="79dp"
+        android:layout_height="35dp"
+        android:src="@drawable/sp"
+        android:layout_below="@+id/w_garis"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/w_sp"/>
+    <ImageView
+        android:layout_width="51dp"
+        android:layout_height="23dp"
+        android:src="@drawable/link"
+        android:layout_toRightOf="@+id/w_dana"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="190dp"
+        android:id="@+id/w_link1"/>
+    <ImageView
+        android:layout_width="51dp"
+        android:layout_height="23dp"
+        android:src="@drawable/link"
+        android:layout_toRightOf="@+id/w_sp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="290dp"
+        android:id="@+id/w_link2"/>
+
+
+        
+        
+
+
+
+</RelativeLayout>
