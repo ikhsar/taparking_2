@@ -13,6 +13,15 @@
         android:theme="@style/Theme.TAParking"
         tools:targetApi="31">
         <activity
+            android:name=".newpassword"
+            android:exported="false" />
+        <activity
+            android:name=".confirmemail"
+            android:exported="false" />
+        <activity
+            android:name=".resetpassword"
+            android:exported="false" />
+        <activity
             android:name=".activity"
             android:exported="false" />
         <activity

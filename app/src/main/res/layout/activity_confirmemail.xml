@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".confirmemail"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="341dp"
+        android:layout_height="327dp"
+        android:src="@drawable/otp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/ce_img_1"/>
+    <TextView
+        android:layout_width="239dp"
+        android:layout_height="34dp"
+        android:text="Confirm Your Email"
+        android:layout_centerInParent="true"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:id="@+id/ce_txt_1"/>
+    <TextView
+        android:layout_width="256dp"
+        android:layout_height="48dp"
+        android:text="We’ve sent 5 digits verification code
+to dimaspm008@gmail.com"
+        android:textAlignment="center"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/ce_txt_1"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/abu"
+        android:textStyle="italic"
+        android:id="@+id/ce_txt_2"/>
+    <TextView
+        android:layout_width="188dp"
+        android:layout_height="26dp"
+        android:text="Enter Verification Code"
+        android:layout_below="@id/ce_txt_2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:id="@+id/ce_txt_3"/>
+    <EditText
+        android:layout_width="390dp"
+        android:layout_height="50dp"
+        android:background="@drawable/custom5"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/ce_txt_3"
+        android:id="@+id/ce_et_1"/>
+    <ImageView
+        android:layout_width="16dp"
+        android:layout_height="12dp"
+        android:src="@drawable/surat"
+        android:layout_marginTop="520dp"
+        android:layout_marginLeft="25dp"
+        android:id="@+id/ce_img_2"/>
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:text="Resend"
+        android:layout_toRightOf="@id/ce_img_2"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="515dp"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:id="@+id/ce_txt_4"/>
+    <ImageView
+        android:layout_width="330dp"
+        android:layout_height="55dp"
+        android:src="@drawable/Background"
+        android:layout_below="@id/ce_txt_4"
+        android:layout_marginTop="50dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/rp_img_2"
+        />
+    <TextView
+        android:layout_width="210dp"
+        android:layout_height="24dp"
+        android:text="Send Verification Code"
+        android:layout_marginTop="608dp"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/rp_txt_4"
+        />
+
+
+</RelativeLayout>
