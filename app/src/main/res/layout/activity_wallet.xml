@@ -7,18 +7,26 @@
     android:layout_height="match_parent"
     tools:context=".wallet"
     android:background="@color/white">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/w_back"/>
     
     <ImageView
         android:layout_width="391dp"
         android:layout_height="100dp"
         android:src="@drawable/custom5"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="70dp"
         android:layout_marginLeft="10dp"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Default Payment Method"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="75dp"
         android:layout_marginLeft="15dp"
         android:textColor="@color/abu"
         android:textStyle="bold"
@@ -78,7 +86,7 @@
         android:src="@drawable/link"
         android:layout_toRightOf="@+id/w_dana"
         android:layout_marginLeft="250dp"
-        android:layout_marginTop="190dp"
+        android:layout_marginTop="250dp"
         android:id="@+id/w_link1"/>
     <ImageView
         android:layout_width="51dp"
@@ -86,7 +94,7 @@
         android:src="@drawable/link"
         android:layout_toRightOf="@+id/w_sp"
         android:layout_marginLeft="250dp"
-        android:layout_marginTop="290dp"
+        android:layout_marginTop="350dp"
         android:id="@+id/w_link2"/>
 
 

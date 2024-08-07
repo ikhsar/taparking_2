@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -7,4 +7,168 @@
     android:layout_height="match_parent"
     tools:context=".BookingActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btnStartTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom5"
+        android:text="20:00"
+        android:textColor="@color/black"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        />
+
+
+
+    <Button
+        android:id="@+id/btnEndTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom5"
+        android:textColor="@color/black"
+        android:text="23:00"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="100dp"
+        />
+
+    <SearchView
+        android:layout_width="339dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btnStartTime"
+        android:background="@drawable/custom5"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/b_src"/>
+
+    <ListView
+        android:layout_width="339dp"
+        android:layout_height="138dp"
+        android:layout_below="@+id/b_src"
+        android:background="@drawable/custom5"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        tools:listitem=""
+        android:id="@+id/b_list"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pick Your Slot"
+        android:layout_below="@+id/b_list"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/abu"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        android:id="@+id/b_txt1"/>
+
+    <GridLayout
+        android:layout_width="400dp"
+        android:layout_height="250dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="-20dp"
+        android:columnCount="4"
+        android:padding="16dp"
+        android:layout_below="@id/b_txt1"
+        android:id="@+id/b_gl">
+
+
+        <EditText
+            android:layout_width="116dp"
+            android:layout_height="63dp"
+            android:background="@drawable/tersedia"
+            android:hint="P1"
+            android:layout_marginTop="25dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_columnSpan="1"/>
+
+
+        <EditText
+            android:layout_width="116dp"
+            android:layout_height="63dp"
+            android:background="@drawable/tidak"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="25dp"
+            android:hint="P2"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_columnSpan="2"/>
+
+        <EditText
+            android:layout_width="116dp"
+            android:layout_height="63dp"
+            android:background="@drawable/tidak"
+            android:layout_marginTop="50dp"
+            android:hint="P3"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_columnSpan="3"
+            android:id="@+id/b_slot3"/>
+
+        <EditText
+            android:layout_width="116dp"
+            android:layout_height="63dp"
+            android:background="@drawable/tersedia"
+            android:layout_marginTop="-63dp"
+            android:layout_marginLeft="257dp"
+            android:hint="P4"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_columnSpan="4"/>
+
+    </GridLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Payment Method"
+        android:layout_below="@id/b_gl"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="-10dp"
+        android:textColor="@color/abu"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:id="@+id/b_txt_select"/>
+
+
+    <ImageButton
+        android:layout_width="242dp"
+        android:layout_height="59dp"
+        android:background="@drawable/custom5"
+        android:layout_below="@id/b_gl"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/gopay"
+        android:paddingRight="170dp"
+        android:id="@+id/b_pasyment"/>
+
+    <ImageButton
+        android:layout_width="255dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/b_pasyment"
+        android:src="@drawable/book"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="25dp"
+
+
+
+
+
+
+
+
+</RelativeLayout>

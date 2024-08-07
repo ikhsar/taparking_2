@@ -9,7 +9,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/btnback"
+        android:src="@drawable/back"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
         android:id="@+id/R_back"
@@ -152,7 +152,6 @@
         android:layout_width="20dp"
         android:layout_height="20dp"
         android:src="@drawable/eye"
-        android:layout_toRightOf="@id/r_password"
         android:layout_marginLeft="350dp"
         android:layout_marginTop="385dp"
         android:id="@+id/r_mata1"/>
@@ -160,7 +159,6 @@
         android:layout_width="20dp"
         android:layout_height="20dp"
         android:src="@drawable/eye"
-        android:layout_toRightOf="@id/r_confirm"
         android:layout_marginLeft="350dp"
         android:layout_marginTop="459dp"
         android:id="@+id/r_mata2"/>
