@@ -31,7 +31,7 @@
             android:textSize="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="5dp"
-            android:textStyle="bold"
+            android:fontFamily="@font/SemiBold"
             android:id="@+id/d_txt1"
             android:textColor="@color/white"/>
 
@@ -42,7 +42,7 @@
                 android:layout_below="@id/d_txt1"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="5dp"
-                android:textStyle="italic"
+                android:fontFamily="@font/MediumItalic"
                 android:textSize="12sp"
                 android:textColor="@color/white"/>
 
@@ -114,24 +114,24 @@
                     android:id="@+id/d_pay"/>
                 
                 <TextView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:text="Top Up"
                     android:layout_toRightOf="@id/d_txt2"
-                    android:textStyle="bold"
+                    android:fontFamily="@font/SemiBold"
                     android:textSize="12sp"
                     android:layout_marginTop="36dp"
                     android:layout_marginLeft="65dp"
                     android:id="@+id/d_txt3"/>
                 <TextView
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:text="Pay"
                     android:layout_toRightOf="@id/d_txt3"
-                    android:textStyle="bold"
+                    android:fontFamily="@font/SemiBold"
                     android:textSize="12sp"
                     android:layout_marginTop="36dp"
-                    android:layout_marginLeft="13dp"/>
+                    android:layout_marginLeft="29dp"/>
 
             </RelativeLayout>
 
@@ -167,33 +167,33 @@
         android:id="@+id/d_history"/>
 
     <TextView
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Location"
         android:layout_below="@id/d_location"
         android:layout_marginLeft="75dp"
         android:layout_marginTop="10dp"
-        android:textStyle="bold"
+        android:fontFamily="@font/SemiBold"
         android:textSize="12sp"
         android:id="@+id/txt_location"/>
     <TextView
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Booking"
         android:layout_below="@id/d_booking"
         android:layout_marginLeft="155dp"
         android:layout_marginTop="10dp"
-        android:textStyle="bold"
+        android:fontFamily="@font/SemiBold"
         android:textSize="12sp"
         android:id="@+id/txt_booking"/>
     <TextView
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="History"
         android:layout_below="@id/d_history"
         android:layout_marginLeft="235dp"
         android:layout_marginTop="10dp"
-        android:textStyle="bold"
+        android:fontFamily="@font/SemiBold"
         android:textSize="12sp"
         android:id="@+id/txt_history"/>
 

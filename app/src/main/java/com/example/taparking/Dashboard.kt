@@ -17,17 +17,11 @@ class DashboardActivity : AppCompatActivity() {
         setContentView(R.layout.activity_dashboard)
 
 
-        val topUpImageView: ImageView = findViewById(R.id.d_topup)
         val payImageView: ImageView = findViewById(R.id.d_pay)
         val locationImageView: ImageView = findViewById(R.id.d_location)
         val bookingImageView: ImageView = findViewById(R.id.d_booking)
         val historyImageView: ImageView = findViewById(R.id.d_history)
 
-
-        topUpImageView.setOnClickListener {
-            val intent = Intent(this, TopUpActivity::class.java)
-            startActivity(intent)
-        }
 
         payImageView.setOnClickListener {
             val intent = Intent(this, PayActivity::class.java)

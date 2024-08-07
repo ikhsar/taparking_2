@@ -45,7 +45,7 @@ Previous Transaction"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/ac_kertas"
         android:layout_marginTop="20dp"
-        android:textStyle="bold"
+        android:fontFamily="@font/SemiBoldItalic"
         android:textColor="@color/abu"
         android:id="@+id/ac_ynn"/>
 

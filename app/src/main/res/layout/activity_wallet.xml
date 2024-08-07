@@ -29,7 +29,7 @@
         android:layout_marginTop="75dp"
         android:layout_marginLeft="15dp"
         android:textColor="@color/abu"
-        android:textStyle="bold"
+        android:fontFamily="@font/SemiBold"
         android:textSize="10sp"
         android:id="@+id/w_default"/>
     
@@ -43,7 +43,7 @@
         android:id="@+id/w_gopay"/>
     
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="E-Wallet"
         android:layout_below="@+id/w_gopay"
@@ -51,7 +51,7 @@
         android:layout_marginLeft="15dp"
         android:textSize="10sp"
         android:textColor="@color/black"
-        android:textStyle="bold"
+        android:fontFamily="@font/SemiBold"
         android:id="@+id/w_ewallet"/>
     
     <ImageView
@@ -86,7 +86,7 @@
         android:src="@drawable/link"
         android:layout_toRightOf="@+id/w_dana"
         android:layout_marginLeft="250dp"
-        android:layout_marginTop="250dp"
+        android:layout_marginTop="260dp"
         android:id="@+id/w_link1"/>
     <ImageView
         android:layout_width="51dp"
@@ -94,7 +94,7 @@
         android:src="@drawable/link"
         android:layout_toRightOf="@+id/w_sp"
         android:layout_marginLeft="250dp"
-        android:layout_marginTop="350dp"
+        android:layout_marginTop="360dp"
         android:id="@+id/w_link2"/>
 
 
