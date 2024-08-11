@@ -68,7 +68,7 @@
         android:layout_marginLeft="20dp"
         android:textColor="@color/abu"
         android:textSize="10dp"
-        android:fontFamily="@font/SemiBold"
+        android:fontFamily="@font/poppinssemibold"
         android:id="@+id/b_txt1"/>
 
     <GridLayout
@@ -141,7 +141,7 @@
         android:layout_marginTop="-10dp"
         android:textColor="@color/abu"
         android:textSize="10sp"
-        android:fontFamily="@font/SemiBold"
+        android:fontFamily="@font/poppinssemibold"
         android:id="@+id/b_txt_select"/>
 
 

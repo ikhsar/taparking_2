@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".selectvehicle">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/sv_back"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vehicle"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppinssemibold"
+        android:layout_marginTop="10dp"
+        android:id="@+id/sv_txt_vehicle"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/sv_txt_vehicle"
+        android:background="@drawable/custom5"
+        android:hint="Vehicle Plate"
+        android:paddingLeft="15dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppinsmediumitalic"
+        android:layout_marginTop="30dp"
+        android:id="@+id/sv_et_vp"/>
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/sv_et_vp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom5"
+        android:hint="Brand"
+        android:paddingLeft="15dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppinsmediumitalic"
+        android:id="@+id/sv_et_brand"/>
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/sv_et_vp"
+        android:layout_toRightOf="@id/sv_et_brand"
+        android:background="@drawable/custom5"
+        android:hint="Model"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="90dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppinsmediumitalic"
+        android:id="@+id/sv_et_model"/>
+
+    <ImageView
+        android:layout_width="312dp"
+        android:layout_height="67dp"
+        android:src="@drawable/addvehicle"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+
+
+
+
+</RelativeLayout>

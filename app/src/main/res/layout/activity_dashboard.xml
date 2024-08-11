@@ -31,7 +31,7 @@
             android:textSize="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="5dp"
-            android:fontFamily="@font/SemiBold"
+            android:fontFamily="@font/poppinssemibold"
             android:id="@+id/d_txt1"
             android:textColor="@color/white"/>
 
@@ -42,15 +42,15 @@
                 android:layout_below="@id/d_txt1"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="5dp"
-                android:fontFamily="@font/MediumItalic"
+                android:fontFamily="@font/poppinsmediumitalic"
                 android:textSize="12sp"
                 android:textColor="@color/white"/>
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:background="@drawable/notif"
-            android:layout_marginLeft="360dp"
+            android:layout_marginLeft="350dp"
             android:layout_marginTop="40dp"
             android:id="@+id/d_g1"/>
 
@@ -118,7 +118,7 @@
                     android:layout_height="wrap_content"
                     android:text="Top Up"
                     android:layout_toRightOf="@id/d_txt2"
-                    android:fontFamily="@font/SemiBold"
+                    android:fontFamily="@font/poppinssemibold"
                     android:textSize="12sp"
                     android:layout_marginTop="36dp"
                     android:layout_marginLeft="65dp"
@@ -128,7 +128,7 @@
                     android:layout_height="wrap_content"
                     android:text="Pay"
                     android:layout_toRightOf="@id/d_txt3"
-                    android:fontFamily="@font/SemiBold"
+                    android:fontFamily="@font/poppinssemibold"
                     android:textSize="12sp"
                     android:layout_marginTop="36dp"
                     android:layout_marginLeft="29dp"/>
@@ -173,7 +173,7 @@
         android:layout_below="@id/d_location"
         android:layout_marginLeft="75dp"
         android:layout_marginTop="10dp"
-        android:fontFamily="@font/SemiBold"
+        android:fontFamily="@font/poppinssemibold"
         android:textSize="12sp"
         android:id="@+id/txt_location"/>
     <TextView
@@ -183,7 +183,7 @@
         android:layout_below="@id/d_booking"
         android:layout_marginLeft="155dp"
         android:layout_marginTop="10dp"
-        android:fontFamily="@font/SemiBold"
+        android:fontFamily="@font/poppinssemibold"
         android:textSize="12sp"
         android:id="@+id/txt_booking"/>
     <TextView
@@ -193,9 +193,62 @@
         android:layout_below="@id/d_history"
         android:layout_marginLeft="235dp"
         android:layout_marginTop="10dp"
-        android:fontFamily="@font/SemiBold"
+        android:fontFamily="@font/poppinssemibold"
         android:textSize="12sp"
         android:id="@+id/txt_history"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/custom2"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/d_bottom"/>
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/rumah"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/d_rumah"/>
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/mobil"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/d_rumah"
+        android:layout_marginLeft="40dp"
+        android:id="@+id/d_mobil"/>
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/qrcode"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/d_mobil"
+        android:layout_marginLeft="40dp"
+        android:id="@+id/d_qrcode"/>
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/wallett"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/d_qrcode"
+        android:layout_marginLeft="40dp"
+        android:id="@+id/d_wallet"/>
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/gear"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/d_wallet"
+        android:layout_marginLeft="40dp"
+        android:id="@+id/d_setting"/>
+
+
 
 
 

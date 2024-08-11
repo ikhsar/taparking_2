@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vehicle"
+    android:backgroundTint="@color/white">
+
+  <ImageButton
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@drawable/back"
+      android:layout_marginLeft="15dp"
+      android:layout_marginTop="15dp"
+      android:id="@+id/v_back"/>
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Vehicle"
+      android:textColor="@color/red"
+      android:fontFamily="@font/poppinssemibold"
+      android:layout_marginLeft="185dp"
+      android:layout_marginTop="25dp"
+      android:textSize="15sp"
+      android:id="@+id/v_txt_vehicle"/>
+
+  <RelativeLayout
+      android:layout_width="380dp"
+      android:layout_height="70dp"
+      android:background="@drawable/custom5"
+      android:layout_below="@+id/v_txt_vehicle"
+      android:layout_marginTop="30dp"
+      android:layout_centerInParent="true"
+      android:id="@+id/v_rl">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="18dp"
+        android:text="B 1234 ZXY"
+        android:background="@drawable/custom5"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppinssemibold"
+        android:id="@+id/v_txt_plat"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:text="Honda"
+      android:layout_toRightOf="@id/v_txt_plat"
+      android:layout_marginLeft="15dp"
+      android:layout_marginTop="20dp"
+      android:id="@+id/v_txt_honda"
+      android:textSize="12sp"
+      android:textColor="@color/black"
+      android:fontFamily="@font/poppinssemibold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:layout_toRightOf="@id/v_txt_honda"
+      android:text="Edit"
+      android:layout_marginLeft="180dp"
+      android:layout_marginTop="20dp"
+      android:textSize="15sp"
+      android:textColor="@color/red"
+      android:fontFamily="@font/poppinssemibold"
+      android:id="@+id/v_txt_edit"/>
+
+  </RelativeLayout>
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="90dp"
+    android:background="@drawable/custom4"
+    android:layout_alignParentBottom="true"
+    android:id="@+id/v_rl2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:text="Select Vehicle"
+      android:textSize="15sp"
+      android:textColor="@color/red"
+      android:fontFamily="@font/poppinssemibold"
+      android:background="@drawable/custom5"
+      android:layout_marginTop="25dp"
+      android:layout_marginLeft="20dp"/>
+
+    <ImageView
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:src="@drawable/add"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/v_img_plus"/>
+
+  </RelativeLayout>
+
+  </RelativeLayout>

@@ -21,7 +21,7 @@
         android:text="Confirm Your Email"
         android:layout_centerInParent="true"
         android:textSize="24sp"
-        android:fontFamily="@font/Bold"
+        android:fontFamily="@font/poppinsbold"
         android:textColor="@color/black"
         android:id="@+id/ce_txt_1"/>
     <TextView
@@ -35,7 +35,7 @@ to dimaspm008@gmail.com"
         android:layout_marginTop="15dp"
         android:textColor="@color/abu"
         android:textSize="12sp"
-        android:fontFamily="@font/Italic"
+        android:fontFamily="@font/poppinsitalic"
         android:id="@+id/ce_txt_2"/>
     <TextView
         android:layout_width="188dp"
@@ -46,7 +46,7 @@ to dimaspm008@gmail.com"
         android:layout_marginTop="0dp"
         android:textSize="12sp"
         android:textColor="@color/black"
-        android:fontFamily="@font/SemiBold"
+        android:fontFamily="@font/poppinssemibold"
         android:id="@+id/ce_txt_3"/>
     <EditText
         android:layout_width="390dp"
@@ -72,7 +72,7 @@ to dimaspm008@gmail.com"
         android:layout_marginTop="495dp"
         android:layout_alignParentRight="true"
         android:textColor="@color/red"
-        android:fontFamily="@font/SemiBold"
+        android:fontFamily="@font/poppinssemibold"
         android:id="@+id/ce_txt_4"/>
     <ImageView
         android:layout_width="330dp"
@@ -88,10 +88,9 @@ to dimaspm008@gmail.com"
         android:layout_height="24dp"
         android:text="Send Verification Code"
         android:layout_marginTop="585dp"
-        android:layout_centerInParent=""
         android:textColor="@color/white"
         android:textSize="14sp"
-        android:fontFamily="@font/SemiBold"
+        android:fontFamily="@font/poppinssemibold"
         android:textAlignment="center"
         android:layout_centerHorizontal="true"
         android:id="@+id/rp_txt_4"
