@@ -2,80 +2,56 @@ package com.example.taparking
 
 import android.content.Intent
 import android.os.Bundle
-import android.text.InputType
-import android.util.Log
-import android.widget.EditText
 import android.widget.ImageView
-import android.widget.TextView
+import android.widget.Toast
+import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
+import com.example.taparking.databinding.ActivityRegisterBinding
 import com.google.firebase.auth.FirebaseAuth
 
 class RegisterActivity : AppCompatActivity() {
-
     private var isPasswordVisible = false
-    private var isConfirmPasswordVisible = false
+    private var isConfirmPasswordVisible=false
+
+    private lateinit var binding: ActivityRegisterBinding
+    private lateinit var firebaseAuth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_register)
 
-        val auth = FirebaseAuth.getInstance()
-        val loginTextView: TextView = findViewById(R.id.RL)
-        val backImageView: ImageView = findViewById(R.id.R_back)
-        val eyeIcon1: ImageView = findViewById(R.id.r_mata1)
-        val eyeIcon2: ImageView = findViewById(R.id.r_mata2)
-        val passwordEditText: EditText = findViewById(R.id.r_password)
-        val confirmPasswordEditText: EditText = findViewById(R.id.r_confirm)
+        binding = ActivityRegisterBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        
+        firebaseAuth = FirebaseAuth.getInstance()
 
-        fun registerUser(email: String, password: String) {
-            auth.createUserWithEmailAndPassword(email, password)
-                .addOnCompleteListener(this) { task ->
-                    if (task.isSuccessful) {
-
-                        val user = auth.currentUser
-
-                    } else {
-
-                        Log.w("Register", "createUserWithEmail:failure", task.exception)
-                    }
-                }
-        }
-
-
-
-        loginTextView.setOnClickListener {
+        binding.RL.setOnClickListener {
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
+        binding.rBtn1.setOnClickListener {
+            val email = binding.rFullname.text.toString()
+            val pass = binding.rPassword.text.toString()
+            val confirmPass = binding.rConfirm.text.toString()
+            if (email.isNotEmpty() && pass.isNotEmpty() && confirmPass.isNotEmpty()) {
+                if (pass == confirmPass) {
 
+                    firebaseAuth.createUserWithEmailAndPassword(email, pass).addOnCompleteListener {
+                        if (it.isSuccessful) {
+                            val intent = Intent(this, LoginActivity::class.java)
+                            startActivity(intent)
+                        } else {
+                            Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
 
-        backImageView.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-        }
-
-        eyeIcon1.setOnClickListener {
-            isPasswordVisible = !isPasswordVisible
-            if (isPasswordVisible) {
-                passwordEditText.inputType = InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD
-                eyeIcon1.setImageResource(R.drawable.mata1)
+                        }
+                    }
+                } else {
+                    Toast.makeText(this, "Password is not matching", Toast.LENGTH_SHORT).show()
+                }
             } else {
-                passwordEditText.inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_VARIATION_PASSWORD
-                eyeIcon1.setImageResource(R.drawable.mata2)
+                Toast.makeText(this, "Empty Fields Are not Allowed !!", Toast.LENGTH_SHORT).show()
+
             }
-            passwordEditText.setSelection(passwordEditText.text.length)
         }
 
-        eyeIcon2.setOnClickListener {
-            isConfirmPasswordVisible = !isConfirmPasswordVisible
-            if (isConfirmPasswordVisible) {
-                confirmPasswordEditText.inputType = InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD
-                eyeIcon2.setImageResource(R.drawable.mata1)
-            } else {
-                confirmPasswordEditText.inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_VARIATION_PASSWORD
-                eyeIcon2.setImageResource(R.drawable.mata2)
-            }
-            confirmPasswordEditText.setSelection(confirmPasswordEditText.text.length)
-        }
     }
 }

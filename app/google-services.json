@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "652751475542",
+    "firebase_url": "https://project-ta-c67a0-default-rtdb.firebaseio.com",
+    "project_id": "project-ta-c67a0",
+    "storage_bucket": "project-ta-c67a0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:652751475542:android:25432b79e5983c5fb17cf7",
+        "android_client_info": {
+          "package_name": "com.example.taparking"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmSfm7RVAkVn9ys7pwNi-XrfcspF9G730"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

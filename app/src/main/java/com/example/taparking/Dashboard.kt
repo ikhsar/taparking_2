@@ -29,7 +29,7 @@ class DashboardActivity : AppCompatActivity() {
         }
 
         locationImageView.setOnClickListener {
-            val intent = Intent(this, LocationActivity::class.java)
+            val intent = Intent(this, LayoutParkiranActivity::class.java)
             startActivity(intent)
         }
 

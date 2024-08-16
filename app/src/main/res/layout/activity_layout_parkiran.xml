@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".layout_parkiran"
+    tools:context=".LayoutParkiranActivity"
     android:background="@color/black">
 
     <ImageView
@@ -71,14 +71,7 @@
         android:layout_marginLeft="250dp"
         android:layout_marginTop="30dp"
         android:id="@+id/lp_8"/>
-    <ImageView
-        android:layout_width="150dp"
-        android:layout_height="75dp"
-        android:background="@drawable/custom4"
-        android:layout_below="@id/lp_7"
-        android:layout_marginLeft="250dp"
-        android:layout_marginTop="30dp"
-        android:id="@+id/lp_8"/>
+
     <ImageView
         android:layout_width="150dp"
         android:layout_height="75dp"
